@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shield: Legal Tech Platform for Consumer Protection in Uganda</title>
+  <meta name="description" content="E-Shield is Uganda's premier legal tech platform dedicated to empowering consumers in the digital marketplace. Access verified service providers, file complaints, interact with legal assistant bots, analyze contracts, and learn about consumer rights. Protect yourself online with E-Shield.">
+<meta name="keywords" content="Consumer Protection Uganda, Legal Tech Platform, Online Fraud Prevention, Verified Service Providers, Legal Assistance Bots, Contract Analyzer, Consumer Rights Uganda, E-Shield">
+<meta name="keywords" content="Consumer Protection Uganda, Legal Tech Platform, Online Fraud Prevention, Verified Service Providers, Legal Assistance Bots, Contract Analyzer, Consumer Rights Uganda, E-Shield">
+<meta name="robots" content="index, follow">
+<meta name="author" content="E-Shield Team">
+<meta property="og:title" content="E-Shield: Legal Tech Platform for Consumer Protection in Uganda">
+<meta property="og:description" content="Empowering Ugandan consumers in the digital marketplace with tools and resources to protect their rights. Access verified service providers, file complaints, and more with E-Shield.">
+<meta property="og:image" content="URL_to_image">
+<meta property="og:url" content="https://www.e-shield.ug">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="E-Shield: Legal Tech Platform for Consumer Protection in Uganda">
+<meta name="twitter:description" content="Protect yourself online with E-Shield. Access verified service providers, file complaints, and get legal advice tailored for Ugandan consumers.">
+<meta name="twitter:image" content="URL_to_image">
+<meta name="twitter:site" content="@eshieldug">
+    <link rel="stylesheet" href="./reporting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header class="sub-page-header">
+            <div class="prev-page">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <h1>Complaint Reporting System</h1>
+        </header>
+    <main>
+        <div id="stepContainer">
+            <div id="step1" class="step">
+                <h2>Step 1: Select Category</h2>
+                <select id="category">
+                    <option value="">Select a category</option>
+                    <option value="service">Service Quality</option>
+                    <option value="billing">Billing Issues</option>
+                    <option value="other">Other</option>
+                </select>
+                <button id="next1">Next</button>
+            </div>
+            <div id="step2" class="step" style="display: none;">
+                <h2>Step 2: Provide Details</h2>
+                <textarea id="details" rows="4" placeholder="Enter complaint details..."></textarea>
+                <button id="prev2">Previous</button>
+                <button id="next2">Next</button>
+            </div>
+            <div id="step3" class="step" style="display: none;">
+                <h2>Step 3: Submit</h2>
+                <p><strong>Category:</strong> <span id="reviewCategory"></span></p>
+                <p><strong>Details:</strong></p>
+                <p id="reviewDetails"></p>
+                <button id="prev3">Previous</button>
+                <button id="submit">Submit</button>
+            </div>
+            <div id="confirmation" class="step" style="display: none;">
+                <h2>Thank you for your submission!</h2>
+                <p>Your complaint has been recorded. We will get back to you shortly.</p>
+            </div>
+        </div>
+    </main>
+    <script src="./reporting.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Analyzer</title>
+    <link rel="stylesheet" href="contract-analyzer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header class="sub-page-header">
+            <div class="prev-page">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <h1>Contract Analyzer</h1>
+        </header>
+    <main>
+        <div class="upload-container">
+            <h2>Upload Your Contract</h2>
+            <input type="file" id="fileInput" accept=".txt,.pdf" />
+            <button id="analyzeBtn">Analyze</button>
+        </div>
+        <div id="results" class="results">
+            <!-- Analysis results will be displayed here -->
+        </div>
+    </main>
+    <script src="contract-analyzer.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sub-page-header {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #10151D;
+    color: #f2f2f2;
+}
+
+.sub-page-header .prev-page {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.sub-page-header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0; 
+    font-size: 18px;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.categories {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of inline items */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
+.categories::-webkit-scrollbar {
+    display: none; /* Hide scrollbars for Webkit browsers */
+}
+
+.categories h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.categories ul {
+    display: flex; /* Align items horizontally */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    margin-right: 1.5rem; /* Space between items */
+}
+
+.categories a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.recent-articles {
+    padding-bottom: 1rem;
+}
+
+.recent-articles div {
+    margin-bottom: 1rem;
+}
+
+.recent-articles h2 {
+    margin-top: 0;
+}
+
+/* New styles for images in articles */
+.article img {
+    display: block;
+    max-width: 100px; /* Ensures the image doesn't exceed 100px in width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Adds space below the image */
+    border-radius: 5px; /* Optional: Add a slight border-radius for aesthetics */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+}
+
+.article h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.article a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.article a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

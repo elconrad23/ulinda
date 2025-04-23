@@ -1,0 +1,145 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #FF69B4, #00008B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .author {
+    text-align: center;
+    font-size: 1em;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.image-space img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Article Section */
+article h2 {
+    font-size: 2em;
+    color: #003366; /* Dark Blue highlight */
+    margin-top: 20px;
+}
+
+article p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #FF69B4;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ccc;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+/* Copyright Section */
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    article h2 {
+        font-size: 1.6em;
+    }
+
+    article p {
+        font-size: 1.1em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}

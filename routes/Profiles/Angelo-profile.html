@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile card of Angelo Sewanonda, Co Founder and Chief Legal Officer. A corporate law enthusiast delivering results-driven legal solutions.">
+    <meta name="keywords" content="Angelo Sewanonda, Co Founder, Chief Legal Officer, Corporate Law, Legal Solutions, Technology">
+    <meta name="author" content="Joseph Muhanguzi">
+    <meta property="og:title" content="Angelo Sewanonda" />
+    <meta property="og:description" content="Angelo Sewanonda, Co Founder, Chief Legal Officer, Corporate Law, Legal Solutions, Technology." />
+    <meta property="og:image" content="../../images/Angelo-Sewanonda.png" />
+    <meta property="og:url" content="https://ulinda.com/routes/Profiles/Angelo-profile.html" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Profile Card - Angelo Sewanonda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(253, 50, 141, 0.2), transparent);
+            border-radius: 15px;
+            z-index: 0;
+        }
+        .profile-card .content {
+            position: relative;
+            z-index: 1;
+        }
+        .profile-image {
+            width:120px;
+            height:120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 3px solid rgb(253, 50, 141);
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .title {
+            color: #777;
+            margin: 5px 0;
+        }
+        .about {
+            margin: 20px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .links {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        .pricing {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .hire-button {
+            background-color: #FFC107;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .hire-button:hover {
+            background-color: #ffca28;
+        }
+
+        .sub-page-header {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #10151D;
+    color: #f2f2f2;
+}
+
+.sub-page-header .prev-page {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.sub-page-header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0; 
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <header class="sub-page-header">
+        <div class="prev-page">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+        <h1>Profile Card</h1>
+    </header>
+<div class="profile-card">
+    <div class="content">
+        <img src="../../images/Angelo-Sewanonda.png" alt="Profile Image of Angelo Sewanonda" class="profile-image">
+        <h1>Angelo Sewanonda</h1>
+        <p class="title">Co Founder and Chief Legal Officer</p>
+        <p class="about">I'm a corporate law enthusiast who thrives on turning complex legal challenges into strategic business advantages. From structuring hundreds of dollars agreements to navigating intricate compliance landscapes, I deliver results-driven legal solutions that empower growth. I believe in the power of technology to improve the legal sector, self-driven learning, and am always pushing the boundaries of my legal expertise.
+            As a corporate lawyer with a passion for game theory, I'm dedicated to transforming complex legal challenges into strategic business opportunities. I have structured high-value agreements and worked towards navigating intricate compliance landscapes, I deliver results-driven legal solutions that empower growth.
+
+Leveraging the insights of game theory, I approach legal issues from a strategic perspective, analyzing the interactions between various parties to anticipate potential outcomes and devise optimal strategies. 
+
+
+With a commitment to self-driven learning and a belief in the power of technology to improve the legal sector, I continuously explore new ways to apply game theory and other advanced methodologies to enhance legal practice.
+        </p>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/angelo-sewanonda-66b7501b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="mailto:sewanonda@gmail.com">Email</a>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const prevPageButton = document.querySelector('.prev-page');
+    prevPageButton.addEventListener('click', () => {
+        window.history.back();
+    });
+});
+</script>
+</body>
+</html>

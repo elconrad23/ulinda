@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile card of Joseph Muhanguzi, Chief Technology Officer. A visionary coder and advocate for innovation in technology.">
+    <meta name="keywords" content="Joseph Muhanguzi, Chief Technology Officer, Technology, Software, Innovation, AI">
+    <meta name="author" content="Joseph Muhanguzi">
+    <meta property="og:title" content="Joseph Muhanguzi"" />
+    <meta property="og:description" content="Chief Technology Officer. A visionary coder and advocate for innovation in technology." />
+    <meta property="og:image" content="../../images/joshtecs.png" />
+    <meta property="og:url" content="https://ulinda.com/routes/Profiles/Joseph-profile.html" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Profile Card - Joseph Muhanguzi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(253, 50, 141, 0.2), transparent);
+            border-radius: 15px;
+            z-index: 0;
+        }
+        .profile-card .content {
+            position: relative;
+            z-index: 1;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 3px solid rgb(253, 50, 141);
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .title {
+            color: #777;
+            margin: 5px 0;
+        }
+        .about {
+            margin: 20px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .links {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        .pricing {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .hire-button {
+            background-color: #FFC107;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .hire-button:hover {
+            background-color: #ffca28;
+        }
+
+        .sub-page-header {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #10151D;
+    color: #f2f2f2;
+}
+
+.sub-page-header .prev-page {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.sub-page-header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0; 
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <header class="sub-page-header">
+        <div class="prev-page">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+        <h1>Profile Card</h1>
+    </header>
+<div class="profile-card">
+    <div class="content">
+        <img src="../../images/joshtecs.png" alt="Profile Image of Joseph Muhanguzi" class="profile-image">
+        <h1>Joseph Muhanguzi</h1>
+        <p class="title">Chief Technology Officer</p>
+        <p class="about">A visionary coder and an enthusiastic advocate for innovation and efficiency in tech. With a deep-seated passion for software, systems, and AI, I harness the transformative potential of technology to drive meaningful progress. I’m an inventive problem-solver, hands-on creator, and meticulous designer. I maintain a close-knit relationship with the projects I develop, the code I write, and the teams I lead. My dedication to tech products is unmatched—whether I am architecting new solutions, contributing to cutting-edge projects, or skillfully managing complex software initiatives, my commitment is clear.</p>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/josephwinner/" target="_blank">LinkedIn</a>
+            <a href="mailto:info.joshtecs@gmail.com">Email</a>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const prevPageButton = document.querySelector('.prev-page');
+    prevPageButton.addEventListener('click', () => {
+        window.history.back();
+    });
+});
+</script>
+</body>
+</html>
