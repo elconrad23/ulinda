@@ -3,17 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('userInput');
     const sendMessageButton = document.getElementById('sendMessage');
 
-    sendMessageButton.addEventListener('click', () => {
+    sendMessageButton.addEventListener('click', async () => {
         const userMessage = userInput.value.trim();
         if (userMessage) {
             appendMessage('User', userMessage);
             userInput.value = '';
 
-            // Simulate a bot response
-            const botResponse = getBotResponse(userMessage);
-            setTimeout(() => {
-                appendMessage('Bot', botResponse);
-            }, 500);
+            const botResponse = await getBotResponse(userMessage);
+            appendMessage('Bot', botResponse);
         }
     });
 
@@ -31,16 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBox.scrollTop = chatBox.scrollHeight;
     }
 
-    function getBotResponse(userMessage) {
-        // Placeholder for actual bot logic
-        const responses = {
-            'hello': 'Hello! How can I assist you today?',
-            'what is a contract?': 'A contract is a legally binding agreement between two or more parties.',
-            'help': 'I can help you with general legal information. Please ask a specific question.'
-        };
+    async function getBotResponse(userMessage) {
+        const apiUrl = 'http://localhost:4000/api/grok';
 
-        const response = responses[userMessage.toLowerCase()] || 'I am not sure how to respond to that. Can you please rephrase your question?';
-        return response;
+        try {
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userMessage })
+            });
+
+            if (!response.ok) {
+                console.error('Grok proxy error', response.status, response.statusText);
+                return 'Sorry, I could not reach the legal assistant right now.';
+            }
+
+            const data = await response.json();
+            return data.answer || 'Sorry, I could not generate an answer right now.';
+        } catch (error) {
+            console.error('Grok request failed', error);
+            return 'Sorry, the legal assistant is unavailable right now.';
+        }
     }
 });
 
