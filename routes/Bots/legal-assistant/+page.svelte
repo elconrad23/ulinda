@@ -24,11 +24,11 @@
 
         const data = await res.json();
         messages = [...messages, { role: 'bot', content: data.answer || 'Sorry, no response.' }];
-    } catch (err) {
-        messages = [...messages, { role: 'bot', content: '❌ Connection error. Is the backend running?' }];
-    } finally {
-        isLoading = false;
-    }
+        } catch (err) {
+            messages = [...messages, { role: 'bot', content: '❌ Connection error. Is the backend running?' }];
+        } finally {
+            isLoading = false;
+        }
     }
 
     onMount(() => {
